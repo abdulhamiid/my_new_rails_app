@@ -73,23 +73,27 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-```
-git clone https://GitHub.com/abdulhamid/my_new_rails_app
-```
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
 
-Ruby
+Go ahead and check the most recent version of each of these:
+
+- Ruby (ruby --version)
+- SQLite3 (sqlite3 --version)
+- Node.js (node --version)
+- Yarn (yarn --version)
+- Rails (rails --version)
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-
+```
+git clone https://GitHub.com/abdulhamiid/my_new_rails_app
+```
 
 ### Install
 
@@ -112,14 +116,11 @@ rails db:migrate
 rails db:seed
 ```
 
-### Run the app
+### Start your application with:
 run:
 ```
-bin/rails dev
+./bin/dev
 ```
-### Deployment
-
-Not Available 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -143,7 +144,6 @@ Not Available
 > Describe 1 - 3 features you will add to the project.
 
 - [ ] **[Add Stylings]**
-- [ ] **[Add new functionalities]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -188,7 +188,5 @@ I would like to thank...
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
