@@ -92,7 +92,7 @@ Go ahead and check the most recent version of each of these:
 Clone this repository to your desired folder:
 
 ```
-git clone https://GitHub.com/abdulhamiid/my_new_rails_app
+git clone https://github.com/abdulhamiid/my_new_rails_app.git
 ```
 
 ### Install
