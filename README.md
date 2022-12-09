@@ -1,24 +1,60 @@
-# README
+# Hello Rails React
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Generate random greeting messages.
 
-Things you may want to cover:
+## Built With
 
-* Ruby version
+- Ruby on Rails
+- React
 
-* System dependencies
+## Getting Started
 
-* Configuration
+### Setup
 
-* Database creation
+To setup the project locally: clone the repository using:
 
-* Database initialization
+```
+git clone https://github.com/abdulhamiid/my_new_rails_app.git
+```
 
-* How to run the test suite
+### Install dependencies
+run:
+```
+bundle install
+```
+```
+npm install
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### Setup database
+run:
+```
+rails db:create
+rails db:migrate
+rails db:seed
+```
 
-* Deployment instructions
+### Run the app
+run:
+```
+yarn build
+rails s
+```
 
-* ...
+## Author
+
+👤 **Abdulhamid**
+
+- GitHub: [abdulhamiid](https://github.com/abdulhamiid)
+- Twitter: [@abdulhamid_adio](https://twitter.com/abdulhamid_adio)
+- LinkedIn: [Adio Abdulhamid](www.linkedin.com/in/abdulhamid-adio)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
