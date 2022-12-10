@@ -1,29 +1,28 @@
-import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchLoadedData } from './components/redux/api';
+import React from "react"
+import ReactDOM from "react-dom"
+import { NavLink } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Provider } from "react-redux";
+import store from "./components/redux/store";
+import Greeting from "./components/Greeting";
 
-let isFetching = true;
-
-function App() {
-  const dispatch = useDispatch();
-
-  if (isFetching === true) {
-    isFetching = false;
-    dispatch(fetchLoadedData());
-  }
-
-  const result = useSelector((state) => state.data);
+const App = () => {
   return (
-    <div className="App container">
-      <h2>Greetings from Api</h2>
-      {result.map((item) => (
-        <p key={item.id}>
-          {item.greeting}
-        </p>
-      ))}
-      <button type="button" onClick={() => { dispatch(fetchLoadedData()); }}>Greet</button>
-    </div>
-  );
+    <Routes>
+      <Route exact path="/greet" element={<Greeting />} />
+    </Routes>
+  )
 }
 
-export default App;
+ReactDOM.render(
+       <Provider store={store}>
+         <BrowserRouter>
+           <NavLink to="/" role="button">
+              <span>Home | </span>
+           </NavLink>
+           <NavLink to="/greet" role="button">
+              <span>Greet someone</span>
+            </NavLink>
+           <App />
+         </BrowserRouter>
+       </Provider>, document.getElementById('root'))
